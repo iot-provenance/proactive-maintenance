@@ -1,0 +1,1 @@
+Bu klasörseki kütüphanlerek ekran görüntüsünde gösterilmiştir.

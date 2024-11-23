@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="535.0" prefWidth="302.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="System Start: Clustering" textAlignment="CENTER" wrappingWidth="409.13671875">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="137.0" prefWidth="438.0">
+               <children>
+                  <VBox prefHeight="62.0" prefWidth="238.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="215.13671875">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <HBox>
+                           <VBox.margin>
+                              <Insets left="20.0" top="2.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <VBox.margin>
+                              <Insets left="20.0" top="2.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Status" wrappingWidth="165.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":" wrappingWidth="34.13671875">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" top="3.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Button fx:id="trainingStart" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="251.0" text="Start Offset Clustering" textAlignment="CENTER" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="137.0" prefWidth="37.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="215.13671875">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="438.0" />
+            <VBox prefHeight="323.0" prefWidth="358.0">
+               <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Clustering Info" textAlignment="CENTER" wrappingWidth="436.13671875">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Separator prefWidth="200.0" />
+            <Text fx:id="clusteringResultLabel" strokeType="OUTSIDE" strokeWidth="0.0" text="Clustering" wrappingWidth="437.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children></VBox>
+         </children>
+      </VBox>
+      <Separator layoutX="449.0" layoutY="-9.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="4.0" />
+      <VBox layoutX="449.0" prefHeight="529.0" prefWidth="285.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Classification" textAlignment="CENTER" wrappingWidth="409.13671875">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="137.0" prefWidth="438.0">
+               <children>
+                  <VBox prefHeight="137.0" prefWidth="37.0">
+                     <children>
+                        <Text fx:id="classificationResultLabel" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="215.13671875">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="438.0" />
+            <VBox prefHeight="559.0" prefWidth="410.0" />
+         </children>
+      </VBox>
+      <VBox layoutY="537.0" prefHeight="181.0" prefWidth="1352.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Info" textAlignment="CENTER" wrappingWidth="436.13671875">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Separator prefWidth="200.0" />
+            
+            <TextArea fx:id="resultLabel"  text="UI Started" >
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+                          </children>
+      </VBox>
+      <VBox layoutX="901.0" layoutY="-1.0" prefHeight="274.0" prefWidth="436.0">
+         <children>
+            <TextArea  fx:id="rulResultLabel" >
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </TextArea>
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="137.0" prefWidth="438.0" />
+            <HBox prefHeight="374.0" prefWidth="436.0" />
+            <VBox prefHeight="101.0" prefWidth="436.0" />
+            <HBox prefHeight="423.0" prefWidth="436.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="901.0" layoutY="290.0" prefHeight="274.0" prefWidth="436.0">
+         <children>
+            <Text  fx:id="actionResultLabel"  strokeType="OUTSIDE" strokeWidth="0.0" text="Action" textAlignment="CENTER" wrappingWidth="409.13671875">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="137.0" prefWidth="438.0" />
+            <HBox prefHeight="475.0" prefWidth="436.0" />
+            <VBox prefHeight="101.0" prefWidth="436.0" />
+            <HBox prefHeight="374.0" prefWidth="436.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

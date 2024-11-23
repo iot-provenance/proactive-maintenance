@@ -1,0 +1,49 @@
+Connected to DB
+process: null model: null message: nullAgent: USER Activity: null Entity: null Entity2: "+Entity2+" Relation: ACTED_ON_BEHALF
+process: CLUSTERING model: null message: nullAgent: SOFTWARE Activity: DATA_COLLECTION Entity: IOT_DATA Entity2: "+Entity2+" Relation: GENERATED_BY
+process: CLUSTERING model: null message: nullAgent: SOFTWARE Activity: DATA_PROCESSING Entity: PROCESSED_DATA Entity2: "+Entity2+" Relation: GENERATED_BY
+process: CLUSTERING model: null message: nullAgent: null Activity: DATA_PROCESSING Entity: IOT_DATA Entity2: "+Entity2+" Relation: USED
+process: CLUSTERING model: null message: nullAgent: SOFTWARE Activity: CLUSTERING_MODEL_GENERATION Entity: PROCESSED_DATA Entity2: "+Entity2+" Relation: USED
+process: CLUSTERING model: dto.ModelDTO@91d7869 message: nullAgent: null Activity: CLUSTERING_MODEL_GENERATION Entity: CLUSTERING_MODEL Entity2: "+Entity2+" Relation: GENERATED_BY
+process: null model: null message: nullAgent: SOFTWARE Activity: ANOMALLY_DETECTION Entity: LABELED_DATA Entity2: "+Entity2+" Relation: GENERATED_BY
+process: CLUSTERING model: null message: nullAgent: null Activity: ANOMALLY_DETECTION Entity: PROCESSED_DATA Entity2: "+Entity2+" Relation: USED
+process: CLUSTERING model: null message: nullAgent: null Activity: ANOMALLY_DETECTION Entity: CLUSTERING_MODEL Entity2: "+Entity2+" Relation: USED
+process: CLASSIFICATION model: dto.ModelDTO@6ab29719 message: nullAgent: null Activity: DATA_COLLECTION Entity: IOT_DATA Entity2: "+Entity2+" Relation: GENERATED_BY
+process: null model: null message: nullAgent: null Activity: DATA_PROCESSING Entity: IOT_DATA Entity2: "+Entity2+" Relation: DERIVED_FROM
+process: null model: null message: nullAgent: null Activity: DATA_PROCESSING Entity: PROCESSED_DATA Entity2: "+Entity2+" Relation: GENERATED_BY
+process: null model: dto.ModelDTO@2eaa6799 message: nullAgent: SOFTWARE Activity: CLASSIFICATION_MODEL_GENERATION Entity: CLASSIFICATION_MODEL Entity2: "+Entity2+" Relation: GENERATED_BY
+Connected to DB
+process: null model: null message: nullAgent: null Activity: DATA_PROCESSING Entity: IOT_DATA Entity2: "+Entity2+" Relation: DERIVED_FROM
+process: null model: null message: nullAgent: null Activity: DATA_PROCESSING Entity: PROCESSED_DATA Entity2: "+Entity2+" Relation: GENERATED_BY
+process: null model: null message: nullAgent: null Activity: FAILURE_PREDICTION Entity: CLASSIFICATION_MODEL Entity2: "+Entity2+" Relation: USED
+process: CLASSIFICATION model: null message: nullAgent: null Activity: CLASSIFICATION_MODEL_GENERATION Entity: CLASSIFICATION_MODEL Entity2: "+Entity2+" Relation: GENERATED_BY
+process: null model: null message: nullAgent: null Activity: CLASSIFICATION_MODEL_GENERATION Entity: LABELED_DATA Entity2: "+Entity2+" Relation: USED
+process: CLASSIFICATION model: null message: nullAgent: null Activity: FAILURE_PREDICTION Entity: PREFAULT_VALUE Entity2: "+Entity2+" Relation: GENERATED_BY
+process: null model: null message: nullAgent: null Activity: FAILURE_PREDICTION Entity: PROCESSED_DATA Entity2: "+Entity2+" Relation: USED
+process: null model: null message: nullAgent: null Activity: FAILURE_PREDICTION Entity: CLASSIFICATION_MODEL Entity2: "+Entity2+" Relation: USED
+Connected to DB
+process: RUL model: null message: nullAgent: null Activity: RUL_MODEL_GENERATION Entity: PROCESSED_DATA Entity2: "+Entity2+" Relation: USED
+process: null model: dto.ModelDTO@1de84c4 message: nullAgent: null Activity: RUL_MODEL_GENERATION Entity: RUL_MODEL Entity2: "+Entity2+" Relation: GENERATED_BY
+process: RUL model: null message: 3.0 RUL calculated for data:1Agent: null Activity: RUL_CALCULATION Entity: PREFAULT_VALUE Entity2: "+Entity2+" Relation: USED
+process: null model: null message: nullAgent: null Activity: RUL_CALCULATION Entity: RUL_VALUE Entity2: "+Entity2+" Relation: GENERATED_BY
+Exception in thread "JavaFX Application Thread" java.lang.NullPointerException: Cannot read the array length because "this.runs" is null
+process: RUL model: null message: nullAgent: null Activity: RUL_CALCULATION Entity: RUL_MODEL Entity2: "+Entity2+" Relation: USED
+process: ACTION model: null message: Action created for data:42923 to be taken in 3.0  hoursAgent: SOFTWARE Activity: ALERT_GENERATION Entity: ACTION_RECORD Entity2: "+Entity2+" Relation: GENERATED_BY
+process: null model: null message: nullAgent: null Activity: ALERT_GENERATION Entity: RUL_VALUE Entity2: "+Entity2+" Relation: USED
+process: null model: null message: nullAgent: null Activity: ALERT_GENERATION Entity: PREFAULT_VALUE Entity2: "+Entity2+" Relation: USED
+process: null model: null message:  Action 1 taken for data:42923Agent: SYSTEM_ADMINISTRATORS Activity: ACTION_EXECUTION Entity: ACTION_RECORD Entity2: "+Entity2+" Relation: USED
+process: null model: null message: nullAgent: SYSTEM_ADMINISTRATORS Activity: ACTION_EXECUTION Entity: MAINTENANCE_RECORD Entity2: "+Entity2+" Relation: GENERATED_BY
+process: null model: null message: nullAgent: SYSTEM_ADMINISTRATORS Activity: ACTION_EXECUTION Entity: MAINTENANCE_RECORD Entity2: "+Entity2+" Relation: ASSOCIATED_WITH
+process: null model: null message: nullAgent: SYSTEM_ADMINISTRATORS Activity: ACTION_EXECUTION Entity: MAINTENANCE_RECORD Entity2: "+Entity2+" Relation: ATTRIBUTED_TO
+process: null model: null message: Prefault Detection EndedAgent: SOFTWARE Activity: FAILURE_PREDICTION Entity: PREFAULT_VALUE Entity2: "+Entity2+" Relation: GENERATED_BY
+Provenance Generation Started
+*************************
+* Converting document  
+*************************
+*************************
+*************************
+* Converting document  
+*************************
+*************************
+Connected to DB
+User Created! Id:6
